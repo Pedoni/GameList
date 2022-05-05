@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C8000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/infoTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#636060"
+                android:stretchColumns="0,1">
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/addedVideogames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/added_videogames"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/addedVideogamesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="40"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/favouriteVideogames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/favourite_videogames"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/favouriteVideogamesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mediumScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/medium_score"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mediumScoreValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/comments"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/commentsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="12"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/commentLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/comment_likes"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/commentLikesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/forumPosts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/forum_posts"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/forumPostsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/gendersText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/favourite_genres"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/genresInfos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="@string/show_info"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:backgroundTint="#636060"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_marginTop="20dp"
+                android:id="@+id/chartGenders"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gendersText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_margin="30dp"
+                android:id="@+id/noGenders"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:text="Not enough data to display chart"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#D69E0D"
+                android:layout_gravity="center"
+                android:background="@color/noFav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gendersText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favSeriesText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/top_5_series"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chartGenders"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seriesInfos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="@string/show_info"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:backgroundTint="#636060"/>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:layout_margin="30dp"
+                android:id="@+id/chartSeriesHor"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@color/noFav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/favSeriesText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_margin="30dp"
+                android:id="@+id/noHorBar"
+                android:layout_width="match_parent"
+                android:text="Not enough data to display chart"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#D69E0D"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@color/noFav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/favSeriesText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/consoleText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/favourite_platforms"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chartSeriesHor"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/consoleInfos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="@string/show_info"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:backgroundTint="#636060"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_marginTop="20dp"
+                android:id="@+id/chartConsole"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/consoleText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_margin="30dp"
+                android:id="@+id/noConsole"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:text="Not enough data to display chart"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#D69E0D"
+                android:layout_gravity="center"
+                android:background="@color/noFav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/consoleText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8000000">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewTitleDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/discussionImage"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/purple_200"
+                android:contentDescription="foto videogioco"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="65"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/discussionTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:textSize="16sp"
+                    android:text="Forum title"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/deletePostDiscussion"
+                android:background="@drawable/bin"
+                android:layout_marginEnd="3dp"
+                android:layout_width="0dp"
+                android:layout_weight="11"
+                android:layout_height="40dp"
+                android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discussionUsersRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewTitleDiscussion"
+        tools:listitem="@layout/comment_card"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/writeCommentForum"
+            android:backgroundTint="@color/noFav"
+            android:layout_weight="9.2"
+            android:layout_marginStart="10dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_edit"
+            android:hint="@string/type_something"
+            android:layout_width="0dp" />
+
+        <ImageButton
+            android:id="@+id/sendCommentForum"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.8"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_send_24"
+            android:layout_height="30dp"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
